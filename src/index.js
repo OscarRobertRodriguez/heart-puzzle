@@ -1,9 +1,13 @@
-import sum from './sum'; 
 
-import './styles/test.scss';  
 
-import './styles/appStyles.scss'; 
 
-var total = sum(10,5); 
 
-console.log(total); 
+require('./assets/stylesheets/appStyles.scss'); 
+
+
+import React from 'react'; 
+import ReactDOM from 'react-dom'; 
+import App from './app/App.js'; 
+
+ReactDOM.render(<App />, document.getElementById('root')); // render our App component and mount it to our #root element
+
