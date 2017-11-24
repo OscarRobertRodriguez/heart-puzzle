@@ -49,13 +49,15 @@ import p44 from 'images/G44';
 import p45 from 'images/G45';
 
 
+
+
 // init images to page
 //blank puzzle canvas
 document.body.style.backgroundImage = wood;
 
 document.querySelector('.puzzle-blank').src = blankCanvas;
 
-
-
+// disable puzzle canvas drag
+document.getElementById('puzzle-unsolved').ondragstart = function() { return false; };
 
 
