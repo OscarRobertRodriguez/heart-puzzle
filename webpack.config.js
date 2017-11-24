@@ -7,6 +7,7 @@ const webpack = require('webpack');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin'); 
 const OptimizeCSSAssets = require('optimize-css-assets-webpack-plugin');
 
+
 const config = {
 	entry: './src/index.js',
 	output: {
@@ -17,7 +18,8 @@ const config = {
 	resolve: {
 		extensions: ['.js', '.json', '.scss', '.css', '.jpeg', '.jpg', '.gif', '.png'],
 		alias: {
-			images: path.resolve(__dirname, 'src/assets/images')
+			images: path.resolve(__dirname, 'src/assets/images'),
+			stylesheets: path.resolve(__dirname, 'src/assets/stylesheets')
 		}
 	},
 	module: {
@@ -90,6 +92,7 @@ const config = {
 		new HTMLWebpackPlugin({
 			template: 'src/index.html'
 		})
+
 	],
 
 	devServer:  {

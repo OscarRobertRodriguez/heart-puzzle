@@ -1,0 +1,26 @@
+
+
+
+
+.btn {
+	color: #000;
+	border: 2px solid currentcolor;
+	width: 80px;
+	padding: 5px;
+	background: none;
+	font-size: 1.4rem;
+	border-radius: 5px;
+	font-family: $lato;
+    font-variant: small-caps;
+    cursor: default;
+
+   &:hover {
+     color: #fff;
+     font-weight: bold;
+     border: 3px solid currentcolor;
+   }
+
+   &:active {
+   	 letter-spacing: 2px;
+   }
+}

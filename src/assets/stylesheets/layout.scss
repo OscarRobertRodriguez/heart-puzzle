@@ -1,0 +1,76 @@
+
+body {
+	display: grid; 
+    grid-template-areas: 
+    					"leftzone main rightzone";  
+   grid-template-columns: 1fr 2fr 1fr;
+   grid-template-rows: 1fr;
+
+   height: 100vh;
+}
+
+
+// @media (max-width: 450px) {
+//    body {
+//    	grid-template-areas: "main"; 
+//    	grid-template-rows: 1fr;
+//    }
+// }
+
+
+main {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+
+.blank-puzzle__canvas {
+	grid-area: puzzle;
+}
+
+.left-drop__zone {
+	grid-area: leftzone;  
+}
+
+
+
+
+.right-drop__zone {
+	grid-area: rightzone;
+
+}
+
+header {
+	grid-area: header;
+}
+
+footer {
+	grid-area: footer;
+}
+
+
+// @media (max-width:1200px) {
+// 		.left-drop__zone {
+// 		display: none;
+// 	}
+// }
+
+
+// @media (max-width:450px) {
+// 	footer {
+// 		display: none;
+// 	}
+// 	header {
+// 		display: none;
+// 	}
+
+// 	.right-drop__zone {
+// 		display: none;
+// 	}
+// 	.left-drop__zone {
+// 		display: none;
+// 	}
+// }
+
