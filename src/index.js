@@ -1,5 +1,5 @@
 
-require('stylesheets/appStyles.scss'); 
+require('stylesheets/main.scss'); 
 
 
 //assets
@@ -49,15 +49,71 @@ import p44 from 'images/G44';
 import p45 from 'images/G45';
 
 
-
-
-// init images to page
-//blank puzzle canvas
+//add wood background to site
 document.body.style.backgroundImage = wood;
 
+//Add image to canvas
 document.querySelector('.puzzle-blank').src = blankCanvas;
 
 // disable puzzle canvas drag
 document.getElementById('puzzle-unsolved').ondragstart = function() { return false; };
+
+
+// import javascript modules 
+
+
+import './open.js';
+import './close.js';
+import handleDragStart from './dragStart';
+import handleDragEnter from './dragEnter';
+import handleDragOver from './dragOver';
+import handleDragLeave from './dragLeave';
+import handleDragEnd from './dragEnd';
+import handleDrop from './drop';  
+
+
+var pieces = document.getElementsByClassName('piece'); 
+var dropzones = document.getElementsByClassName('dropzone');
+
+
+[].forEach.call(dropzones, function(dropzone) {
+	dropzone.addEventListener('dragenter', handleDragEnter);
+});
+
+
+//
+[].forEach.call(dropzones,function (dropzone) {
+	dropzone.addEventListener('dragleave', handleDragLeave);
+});
+
+[].forEach.call(dropzones,function(dropzone) {
+	dropzone.addEventListener('dragover', handleDragOver);
+});
+
+
+[].forEach.call(dropzones,function (dropzone) {
+     dropzone.addEventListener('drop', handleDrop); 
+});
+
+
+
+
+// setup dragstart functionality 
+[].forEach.call(pieces , function (piece) {
+	piece.addEventListener('dragstart', handleDragStart)});
+
+
+ window.addEventListener('dragend', handleDragEnd);
+
+
+
+
+
+
+
+
+
+
+
 
 

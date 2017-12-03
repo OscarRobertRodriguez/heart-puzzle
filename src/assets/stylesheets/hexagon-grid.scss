@@ -1,0 +1,87 @@
+.hexagon {
+  position: absolute;
+  width: 122px;
+  height: 118px; 
+  margin: 28.87px 0;
+  z-index: 999999999;
+}
+
+
+
+
+.hex-fill {
+	fill: black;
+	stroke: #fff;
+	stroke-width: 1;
+	transition: fill 1ms ease-in, stroke .5ms ease;
+	&:hover {
+        stroke-width: 2;
+        stroke: hotpink;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+#hex1, #hex2, #hex3, #hex4, #hex5 {
+	position: absolute;
+	top: 17px;
+}
+
+
+#hex1 {
+	left: 46px;
+}
+
+
+#hex2 {
+   left: 225px;
+}
+
+#hex3 {
+	left: 399px;
+}
+
+#hex4 {
+	right: 228px;
+}
+
+#hex5 {
+	right: 54px;
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 1600px) {
+
+.hex {
+  color: green; 
+  font-size: 172px; 
+  transform: rotate(270deg);
+  z-index: 999999999;
+  display: block;
+}
+
+
+
+#hex1 {
+	position: absolute;
+	top: 340px;
+	left: 157px;
+}
+
+
+}

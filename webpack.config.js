@@ -51,17 +51,12 @@ const config = {
 					]
 				})),
 			},
-			// {
-			// 	test: /\.(png|jp(e*)g|svg)$/,
-			// 	use: [{
-			// 		loader: 'url-loader',
-			// 		options: {
-			// 			limit: 8000,
-			// 			name: 'src/assets/images/[hash]-[name].[ext]'
-			// 		}
-			// 	}, {loader: 'image-webpack-loader'}]
+			{
+		       test: /\.mp3$/,
+		       exclude: /none_modules/, 
+		       loader: 'file-loader'
 
-			// },
+			},
 			{
 				test: /\.(jpe?g|png|gif|svg)$/i,
 				loaders: ['file-loader?context=src/assets/images/&name=images/[path][name].[ext]',{

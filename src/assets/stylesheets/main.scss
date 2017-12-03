@@ -1,0 +1,88 @@
+@import './fonts';
+@import './layout';
+@import './buttons';
+@import './menu.scss';
+@import './hexagon-grid';
+@import './clock';
+@import './footer';
+
+body {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	background: url('../images/woodTexture.jpg');
+}
+
+.blank-puzzle__canvas {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    background: #fff;
+    border: 3px solid black;
+    padding: 5px;
+    border-radius: 5px;
+
+    box-shadow: 2px 4px 3px ;
+
+}
+
+.puzzle-blank { 
+  top: 0;
+  width: 900px;
+  border-radius: 5px;
+  opacity: .9;
+}
+
+
+@media  (min-width: 1600px) {
+	.puzzle-blank {
+		width: 1200px;
+	}
+
+	.blank-puzzle__canvas {
+		width: 1205px;
+	}
+}
+
+.piece {
+   cursor:move;
+   width: 75px;
+   transition: transform .2s ease;
+   &:hover {
+   	transform: scale(1.5);
+   }
+}
+
+@media (max-width: 1415px ) {
+	.piece {
+	width: 65px;
+
+}
+ .piece:hover {
+ 	transform: scale(1.8);
+ }
+}
+
+@media (min-width: 1600px) {
+	.piece {
+		width: 145px;
+       margin: 5px;
+	}
+    .piece:hover {
+      transform: none;
+    }
+}
+
+
+
+
+.validtarget {
+	color: red;
+}
+
+
+
+
+
+
+
