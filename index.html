@@ -7,55 +7,131 @@
 	<link href="style.css" rel="stylesheet"></head>
 	
 	<body id='whole-page'>
-	
-
+		
+		<header id="header" >
+			<div class="countdown-container">
+				4:33
+			</div>
+			<button class='btn menu' id='open-menu' type="button">show menu</button>
+			</header><!-- /header -->
 			<div  class="left-drop__zone">
-				<div class="countdown-container">
-					4:33
+				
+				<div class="left-drop__zone-pieces">
+					<img id="p1" class="piece" src="../images/G5.png" data-num='G5' alt="puzzle piece">
+					<img id="p2" class="piece" src="../images/G6.png" alt="puzzle piece">
+					<img id="p3" class="piece" src="../images/G7.png" alt="puzzle piece">
+					<img id="p4" class="piece" src="../images/G8.png" alt="puzzle piece">
+					<img id="p5" class="piece" src="../images/G9.png" alt="puzzle piece">
+					<img id="p6" class="piece" src="../images/G10.png" alt="puzzle piece">
+					<img id="p7" class="piece" src="../images/G11.png" alt="puzzle piece">
+					<img id="p8" class="piece" src="../images/G12.png" alt="puzzle piece">
+					<img id="p9" class="piece" src="../images/G13.png" alt="puzzle piece">
+					<img id="p10" class="piece" src="../images/G14.png" alt="puzzle piece">
+					<img id="p11" class="piece" src="../images/G15.png" alt="puzzle piece">
+					<img id="p12" class="piece" src="../images/G16.png" alt="puzzle piece">
+					<img id="p13" class="piece" src="../images/G17.png" alt="puzzle piece">
+					<img id="p14" class="piece" src="../images/G18.png" alt="puzzle piece">
+					<img id="p15" class="piece" src="../images/G19.png" alt="puzzle piece">
+					<img id="p16" class="piece" src="../images/G20.png" alt="puzzle piece">
+					<img id="p17" class="piece" src="../images/G21.png" alt="puzzle piece">
+					<img id="p18" class="piece" src="../images/G22.png" alt="puzzle piece">
+					<img id="p19" class="piece" src="../images/G23.png" alt="puzzle piece">
+					<img id="p20" class="piece" src="../images/G24.png" alt="puzzle piece">
 				</div>
 			</div >
 			<main class=puzzle-container>
-				
-				<div class='blank-puzzle__canvas'>
-					<img class='puzzle-blank'>
-				</div>
-				
-				
-			</main>
-			<div class="right-drop__zone">
-				<button class='btn menu' type="button">show menu</button>
-			    	<ul class="options-list">
-					<li class="option">reset</li>
-					<li class="option">edges</li>
-					<li class="option">Preview</li>
-					<li class="option">Full Preview</li>
-					<li class="option">Scatter</li>
-					<li class="option">pause</li>
-			   </ul> 
+				<div class='blank-puzzle__canvas' id='puzzle-unsolved'>
+					<img class='puzzle-blank' >
+
+
+<svg class='hexagon dropzone' id='hex1'  viewBox="0 0 140 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+    <defs>
+        <polygon  id="path-1" points="135.652335 60 102.543698 116.460797 37.4563001 116.799088 4.34764791 60 36.8913394 3.20091199 103.108629 3.53920317"></polygon>
+        <pattern id="pattern-2" patternUnits="objectBoundingBox" x="-0.087598784%" width="100.087599%" height="100%">
+            <use xlink:href="#G45" transform="scale(1.19577027,1.19577027)"></use>
+        </pattern>
+        <image id="G45" width="110" height="95" xlink:href="images/G45.png"></image>
+    </defs>
+    <g id="Page-1" class='hex-fill'    fill-rule="evenodd">
+        <g id="Polygon">
+            <use fill="url(#pattern-2)" fill-rule="evenodd" xlink:href="#path-1"></use>
+            <path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
+
+        </g>
+    </g>
+</svg>
+
 			
-			</div >
+	<!-- 		<svg class='hexagon' id='hex1' width="132px" height="114px" viewBox="0 0 132 114" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<defs>
+				<pattern id="img" patternUnits="userSpaceOnUse" width="100%" height="100%" patternContentUnits="none">
+					<image xlink:href="images/G35.png"  height="1" width="1" perserveAspectRation='none' />
+				</pattern>
+				</defs>
+			<polygon id="hex" class='dropzone' stroke="#9B9B9B" fill="url(#img)" transform="translate(66.000000, 57.000000) rotate(90.000000) translate(-66.000000, -57.000000) " points="66 -8 122.291651 24.5 122.291651 89.5 66 122 9.70834875 89.5 9.70834875 24.5"></polygon>
+		</svg> -->
+		
+		<!-- 	<div class='dropzone' id='hex2'>
+				<span class='hex' >&#x2B22;</span>
+		</div>
+		<div  class="dropzone" id='hex3'>
+				<span class='hex' >&#x2B22;</span>
+		</div>
+		<div class="dropzone" id='hex4'>
+				<span class='hex' >&#x2B22;</span>
+		</div>
+		<div class="dropzone" id='hex5'>
+				<span class='hex' >&#x2B22;</span>
+		</div> -->
+	</div>
+</main>
+<ul class="options-list">
+	<li class="option">close</li>
+	<li class="option">edges</li>
+	<li class="option">Preview</li>
+	<li class="option">Full Preview</li>
+	<li class="option">Scatter</li>
+	<li class="option">pause</li>
+</ul>
+<div class="right-drop__zone">
+	<div class="right-drop__zone-pieces">
+		<img id='21' class='piece' src="../images/G25.png" >
+		<img id='22' class='piece' src="../images/G26.png" >
+		<img id='23' class='piece' src="../images/G27.png" >
+		<img id='24' class='piece' src="../images/G28.png" >
+		<img id='25' class='piece' src="../images/G29.png" >
+		<img id='26' class='piece' src="../images/G30.png" >
+		<img id='27' class='piece' src="../images/G31.png" >
+		<img id='28' class='piece' src="../images/G32.png" >
+		<img id='29' class='piece' src="../images/G33.png" >
+		<img id='30' class='piece' src="../images/G34.png" >
+		<img id='31' class='piece' src="../images/G35.png" >
+		<img id='32' class='piece' src="../images/G36.png" >
+		<img id='33' class='piece' src="../images/G37.png" >
+		<img id='34' class='piece' src="../images/G38.png" >
+		<img id='35' class='piece' src="../images/G39.png" >
+		<img id='36' class='piece' src="../images/G40.png" >
+		<img id='37' class='piece' src="../images/G41.png" >
+		<img id='38' class='piece' src="../images/G42.png" >
+		<img id='39' class='piece' src="../images/G43.png" >
+		<img id='40' class='piece' src="../images/G44.png" >
+		<img id='41' class='piece' src="../images/G45.png" data-num='G45' >
+	</div>
+</div >
+<!-- 	<footer>
+	<small>created by Oscar Rodriguez with grit</small>
+</footer> -->
+<script type="text/javascript" src="bundle.js"></script></body>
+</html>
+<!-- 	<aside class='sidebar'>
+<div class='controls'>
+								<button type="button" value='scramble'>Scramble</button>
+								<button type="button" value='hint'>hint</button>
+								<button type="button">restart</button>
+								<button type="">preview</button>
+								<button type="button">full preview</button>
+								<button type="button">pause</button>
+								<button type="edges">edges</button>
+</div>
 
-
-         
-
-
-
-
-		<!-- 	<footer>
-				<small>created by Oscar Rodriguez with grit</small>
-			</footer> -->
-			
-		<script type="text/javascript" src="bundle.js"></script></body>
-	</html>
-	<!-- 	<aside class='sidebar'>
-			<div class='controls'>
-					<button type="button" value='scramble'>Scramble</button>
-					<button type="button" value='hint'>hint</button>
-					<button type="button">restart</button>
-					<button type="">preview</button>
-					<button type="button">full preview</button>
-					<button type="button">pause</button>
-					<button type="edges">edges</button>
-			</div>
-			
-	</aside> -->
+</aside> -->
