@@ -3,7 +3,7 @@ require('stylesheets/main.scss');
 
 
 //assets
-import blankCanvas from 'images/unsolved.png'; 
+
 import solvedCanvas from 'images/solved.png';
 import wood from 'images/woodTexture.jpg';
 

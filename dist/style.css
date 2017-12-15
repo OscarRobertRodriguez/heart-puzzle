@@ -389,8 +389,7 @@ small {
 body {
   box-sizing: border-box;
   padding: 0;
-  margin: 0;
-  background: url(data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvd29vZFRleHR1cmUuanBnIjs=); }
+  margin: 0; }
 
 .blank-puzzle__canvas {
   display: flex;
