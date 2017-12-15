@@ -7,7 +7,7 @@
     "build": "webpack",
     "dev": "webpack --progress && webpack-dev-server -d --hot --config webpack.config.js --watch",
     "production": "NODE_ENV=production webpack",
-    "deploy": "npm run production && git branch -D gh-pages && git subtree push --prefix dist origin gh-pages"
+    "deploy": "npm run production && git branch -D gh-pages && git checkout -b gh-pages && git subtree push --prefix dist origin gh-pages"
   },
   "browserslist": [
     "> 10%"

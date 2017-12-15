@@ -60,6 +60,17 @@ const config = {
 
 			},
 			{
+				test: /.*\.(gif|png|jpe?g)$/i,
+				use: [
+					{
+						loader: 'url-loader',
+						options: {
+							limit:8000,
+						},
+					},
+				]
+			},
+			{
 				test: /\.(jpe?g|png|gif|svg)$/i,
 				loaders: ['file-loader?context=src/assets/images/&name=images/[path][name].[ext]',{
 					loader: 'image-webpack-loader',
