@@ -5,12 +5,10 @@ require('stylesheets/main.scss');
 //assets
 
 import solvedCanvas from 'images/solved.png';
-import wood from 'images/woodTexture.jpg';
 
 
 
-//add wood background to site
-document.body.style.backgroundImage = wood;
+
 
 //Add image to canvas
 document.querySelector('.puzzle-blank').src = solvedCanvas;
