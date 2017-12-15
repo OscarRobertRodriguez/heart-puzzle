@@ -47,7 +47,7 @@
   margin: 0; 
   list-style-type: none;
   transition: transform .25s ease;
-  z-index: 999999999999; 
+  z-index: 9999999999; 
 }
 
 
@@ -55,9 +55,15 @@
   position: absolute;
   top: 20px;
   right: 50px;
+  cursor: pointer;
+  &:hover {
+    fill: #fff;
+    stroke: #fff;
+  }
 }
 
 .option {
+  cursor: pointer;
   font-family: $lato;
   font-size: 2rem;
   flex: 1;
@@ -86,3 +92,9 @@
     width: 200px;
   }
 }
+
+
+
+
+
+

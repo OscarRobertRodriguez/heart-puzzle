@@ -3,4 +3,30 @@
 footer { 
 	text-transform: capitalize;
     padding-left: 10px;
+    text-align: center;
+}
+
+small {
+	font-family: $lato;
+	font-size: 12px;
+	letter-spacing: 1px;
+	font-weight: 600;
+	font-variant: small-caps;
+	margin: 0 auto;
+	opacity: .3;
+	cursor: pointer;
+	transition: opacity .2ms ease-in;
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.grit {
+	color: blue;
+	transition: font-size .9ms ease;
+	&:hover {
+	  letter-spacing: 2px;
+	  font-size: 15px;
+	  color: #fff;
+	}
 }

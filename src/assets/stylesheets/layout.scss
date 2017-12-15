@@ -13,9 +13,10 @@ body {
    body {    
     grid-template-areas: "header header header"
                          " leftzone  main main"
-                         " rightzone main main"; 
-   grid-template-columns: minmax(325px,1fr) 1fr 1fr ;                     
-   grid-template-rows:  80px 320px 1fr;
+                         " rightzone main main"
+                          "rightzone footer footer"; 
+   grid-template-columns: minmax(315px,1fr) 1fr 1fr ;                     
+   grid-template-rows:  80px 320px 1fr 20px;
    }
 }
 
@@ -31,7 +32,7 @@ body {
     }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 2190px) {
     .puzzle-container {
         margin-top: 250px;
     }

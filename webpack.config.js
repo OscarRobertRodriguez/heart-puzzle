@@ -19,7 +19,9 @@ const config = {
 		extensions: ['.js', '.json', '.scss', '.css', '.jpeg', '.jpg', '.gif', '.png'],
 		alias: {
 			images: path.resolve(__dirname, 'src/assets/images'),
-			stylesheets: path.resolve(__dirname, 'src/assets/stylesheets')
+			stylesheets: path.resolve(__dirname, 'src/assets/stylesheets'),
+			sounds: path.resolve(__dirname, 'src/assets/audio'),
+			icons: path.resolve(__dirname, 'src/assets/icons')
 		}
 	},
 	module: {
@@ -52,8 +54,8 @@ const config = {
 				})),
 			},
 			{
-		       test: /\.mp3$/,
-		       exclude: /none_modules/, 
+		       test: /\.(mp3|wav)$/,
+		       exclude: /node_modules/, 
 		       loader: 'file-loader'
 
 			},

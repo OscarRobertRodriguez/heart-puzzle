@@ -1,15 +1,16 @@
 
 
 export default function handleDragEnter(e) {
-	var dropzone = e.target;
-	var hexbackground = dropzone.childNodes[3];
-	e.stopPropagation();
+    e.stopPropagation();
 	e.preventDefault(); 
-    console.log('drag Enter' + hexbackground);
-if (hexbackground !== undefined) {
-   hexbackground.style.stroke = 'hotpink';
-   hexbackground.style.strokeWidth = '2';      
-    }
+	var dropzone = e.target;
+	var hexbackground = e.target.childNodes[3];
+
+    console.log('drag Enter' + e);
+// if (hexbackground !== undefined && hexbackground.style.fill !== 'none') {
+//    hexbackground.style.stroke = 'hotpink';
+//    hexbackground.style.strokeWidth = '2';      
+//     }
  
 	return false; 
 }
