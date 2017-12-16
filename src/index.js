@@ -4,7 +4,7 @@ require('stylesheets/main.scss');
 
 //assets
 
-import solvedCanvas from 'images/solved.png';
+import solvedCanvas from 'images/solved.jpg';
 
 
 
