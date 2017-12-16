@@ -7,10 +7,9 @@
 	</head>
 	
 	<body id='whole-page'>
-
 		<div id="mpopupBox" class="mpopup">
 			<!-- mPopup content -->
-			<div id='mpopContent' class="mpopup-content">
+			<div  class="mpopup-content">
 				<div class="mpopup-head">
 					<p class='modal-story'>can you make it out of the forest alive or will the bear find you before you can get out!</p>
 					<img class='modal-image' src="images/solved.jpg" alt="">
@@ -22,11 +21,9 @@
 				
 			</div>
 		</div>
-
-
 		<div id="defeatBox" class="mpopup">
 			<!-- mPopup content -->
-			<div id='mpopContent' class="mpopup-content">
+			<div  class="mpopup-content">
 				<div class="mpopup-head">
 					<p class="modal-story">The <span class="bear">bear</span> got you, try again.</p>
 					<!-- <img class='modal-image' src="images/solved.png" alt=""> -->
@@ -38,99 +35,97 @@
 				
 			</div>
 		</div>
-
-
-	  <div id="successBox" class="mpopup">
+		<div id="successBox" class="mpopup">
 			<!-- mPopup content -->
-			<div id='mpopContent' class="mpopup-content">
+			<div  class="mpopup-content">
 				<div class="mpopup-head">
-					<p class="modal-story">You manage to scare off the bear and are greeted by a birds call as the sunrises<p>
-					<!-- <img class='modal-image' src="images/solved.png" alt=""> -->
-				</div>
-				<div class="mpopup-main">
+					<p class="modal-story">You beat the bear in a wrestling match and escape. Victory.<p>
+						<!-- <img class='modal-image' src="images/solved.png" alt=""> -->
+					</div>
+					<div class="mpopup-main">
+						
+						<button  class='modal-btn restart'>restart</button>
+					</div>
 					
-					<button  class='modal-btn restart'>restart</button>
 				</div>
-				
 			</div>
-		</div>
-		
-		<header id="header" >
-			<div id='clock' class="countdown-container">
-				4:33
-			</div>
-			<!-- hamburger icon -->
-			<svg height="32px" id="open-menu" class='menu' style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg>
-			</header><!-- /header -->
-			<div  class="left-drop__zone">
-				
-				<div class="left-drop__zone-pieces">
+			
+			<header id="header" >
+				<div id='clock' class="countdown-container">
+					4:33
 				</div>
-			</div >
-			<main class=puzzle-container>
-				<div class='blank-puzzle__canvas' id='puzzle-unsolved'>
-					<img class='puzzle-blank' >
-					<!-- hex 1 -->
-					<svg class='hexagon dropzone' id='hex1'  viewBox="0 0 140 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-resize = 'false'>
-						<defs>
-					<polygon  id="path-1" points="135.652335 60 102.543698 116.460797 37.4563001 116.799088 4.34764791 60 36.8913394 3.20091199 103.108629 3.53920317"></polygon>
-					<pattern id="pattern-1" patternUnits="objectBoundingBox" x="-0.087598784%" width="100.087599%" height="100%">
-						<use xlink:href="#G45" transform="scale(1.19577027,1.19577027)"></use>
-					</pattern>
-					<image id="G45" width="110" height="95" xlink:href="images/G45.png"></image>
-					</defs>
-					<g  class='hex-fill edge-svg'    fill-rule="evenodd">
-						<g id="Polygon">
-							<use fill="url(#pattern-1)" fill-rule="evenodd" xlink:href="#path-1"></use>
-						<path class='test' d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
+				<!-- hamburger icon -->
+				<svg height="32px" id="open-menu" class='menu' style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg>
+				</header><!-- /header -->
+				<div  class="left-drop__zone">
+					
+					<div class="left-drop__zone-pieces">
+					</div>
+				</div >
+				<main class=puzzle-container>
+					<div class='blank-puzzle__canvas' id='puzzle-unsolved'>
+						<img class='puzzle-blank' alt='blank puzzle canvas'  >
+						<!-- hex 1 -->
+						<svg class='hexagon dropzone' id='hex1'  viewBox="0 0 140 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-resize = 'false'>
+							<defs>
+						<polygon  id="path-1" points="135.652335 60 102.543698 116.460797 37.4563001 116.799088 4.34764791 60 36.8913394 3.20091199 103.108629 3.53920317"></polygon>
+						<pattern id="pattern-1" patternUnits="objectBoundingBox" x="-0.087598784%" width="100.087599%" height="100%">
+							<use xlink:href="#G45" transform="scale(1.19577027,1.19577027)"></use>
+						</pattern>
+						<image id="G45" width="110" height="95" xlink:href="images/G45.png"></image>
+						</defs>
+						<g  class='hex-fill edge-svg'    fill-rule="evenodd">
+							<g>
+								<use fill="url(#pattern-1)" fill-rule="evenodd" xlink:href="#path-1"></use>
+							<path class='test' d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
+						</g>
 					</g>
+				</svg>
+				<!-- hex 2 -->
+				<svg class='hexagon dropzone' id='hex2'  viewBox="0 0 140 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  data-resize = 'false'>
+					<defs>
+				<polygon  id="path-2" points="135.652335 60 102.543698 116.460797 37.4563001 116.799088 4.34764791 60 36.8913394 3.20091199 103.108629 3.53920317"></polygon>
+				<pattern id="pattern-2" patternUnits="objectBoundingBox" x="-0.087598784%" width="100.087599%" height="100%">
+					<use xlink:href="#G41" transform="scale(1.19577027,1.19577027)"></use>
+				</pattern>
+				<image id="G41" width="110" height="95" xlink:href="images/G41.png"></image>
+				</defs>
+				<g  class='hex-fill edge-svg'    fill-rule="evenodd">
+					<g>
+						<use fill="url(#pattern-2)" fill-rule="evenodd" xlink:href="#path-2"></use>
+					<path class='test' d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 				</g>
-			</svg>
-			<!-- hex 2 -->
-			<svg class='hexagon dropzone' id='hex2'  viewBox="0 0 140 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  data-resize = 'false'>
-				<defs>
-			<polygon  id="path-2" points="135.652335 60 102.543698 116.460797 37.4563001 116.799088 4.34764791 60 36.8913394 3.20091199 103.108629 3.53920317"></polygon>
-			<pattern id="pattern-2" patternUnits="objectBoundingBox" x="-0.087598784%" width="100.087599%" height="100%">
-				<use xlink:href="#G41" transform="scale(1.19577027,1.19577027)"></use>
-			</pattern>
-			<image id="G41" width="110" height="95" xlink:href="images/G41.png"></image>
-			</defs>
-			<g  class='hex-fill edge-svg'    fill-rule="evenodd">
-				<g id="Polygon">
-					<use fill="url(#pattern-2)" fill-rule="evenodd" xlink:href="#path-2"></use>
-				<path class='test' d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 			</g>
+		</svg>
+		<!-- hex 3 -->
+		<svg class='hexagon dropzone' id='hex3'  viewBox="0 0 140 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-resize = 'false'>
+			<defs>
+		<polygon  id="path-3" points="135.652335 60 102.543698 116.460797 37.4563001 116.799088 4.34764791 60 36.8913394 3.20091199 103.108629 3.53920317"></polygon>
+		<pattern id="pattern-3" patternUnits="objectBoundingBox" x="-0.087598784%" width="100.087599%" height="100%">
+			<use xlink:href="#G37" transform="scale(1.19577027,1.19577027)"></use>
+		</pattern>
+		<image id="G37" width="110" height="95" xlink:href="images/G37.png"></image>
+		</defs>
+		<g  class='hex-fill edge-svg'    fill-rule="evenodd">
+			<g>
+				<use fill="url(#pattern-3)" fill-rule="evenodd" xlink:href="#path-3"></use>
+			<path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 		</g>
-	</svg>
-	<!-- hex 3 -->
-	<svg class='hexagon dropzone' id='hex3'  viewBox="0 0 140 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-resize = 'false'>
-		<defs>
-	<polygon  id="path-3" points="135.652335 60 102.543698 116.460797 37.4563001 116.799088 4.34764791 60 36.8913394 3.20091199 103.108629 3.53920317"></polygon>
-	<pattern id="pattern-3" patternUnits="objectBoundingBox" x="-0.087598784%" width="100.087599%" height="100%">
-		<use xlink:href="#G37" transform="scale(1.19577027,1.19577027)"></use>
-	</pattern>
-	<image id="G37" width="110" height="95" xlink:href="images/G37.png"></image>
-	</defs>
-	<g  class='hex-fill edge-svg'    fill-rule="evenodd">
-		<g id="Polygon">
-			<use fill="url(#pattern-3)" fill-rule="evenodd" xlink:href="#path-3"></use>
-		<path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 	</g>
-</g>
 </svg>
 <!-- hex 4 -->
 <svg class='hexagon dropzone' id='hex4'  viewBox="0 0 140 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-resize = 'false'>
-<defs>
+	<defs>
 <polygon  id="path-4" points="135.652335 60 102.543698 116.460797 37.4563001 116.799088 4.34764791 60 36.8913394 3.20091199 103.108629 3.53920317"></polygon>
 <pattern id="pattern-4" patternUnits="objectBoundingBox" x="-0.087598784%" width="100.087599%" height="100%">
-<use xlink:href="#G33" transform="scale(1.19577027,1.19577027)"></use>
+	<use xlink:href="#G33" transform="scale(1.19577027,1.19577027)"></use>
 </pattern>
 <image id="G33" width="110" height="95" xlink:href="images/G33.png"></image>
 </defs>
 <g  class='hex-fill edge-svg'    fill-rule="evenodd">
-<g id="Polygon">
-	<use fill="url(#pattern-4)" fill-rule="evenodd" xlink:href="#path-4"></use>
-<path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
+	<g>
+		<use fill="url(#pattern-4)" fill-rule="evenodd" xlink:href="#path-4"></use>
+	<path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 </g>
 </g>
 </svg>
@@ -144,7 +139,7 @@
 <image id="G29" width="110" height="95" xlink:href="images/G29.png"></image>
 </defs>
 <g  class='hex-fill edge-svg'    fill-rule="evenodd">
-<g id="Polygon">
+<g>
 <use fill="url(#pattern-5)" fill-rule="evenodd" xlink:href="#path-5"></use>
 <path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 </g>
@@ -160,7 +155,7 @@
 <image id="G43" width="110" height="95" xlink:href="images/G43.png"></image>
 </defs>
 <g  class='hex-fill edge-svg'    fill-rule="evenodd">
-<g id="Polygon">
+<g>
 <use fill="url(#pattern-6)" fill-rule="evenodd" xlink:href="#path-6"></use>
 <path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 </g>
@@ -176,7 +171,7 @@
 <image id="G39" width="110" height="95" xlink:href="images/G39.png"></image>
 </defs>
 <g  class='hex-fill edge-svg'    fill-rule="evenodd">
-<g id="Polygon">
+<g>
 <use fill="url(#pattern-7)" fill-rule="evenodd" xlink:href="#path-7"></use>
 <path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 </g>
@@ -192,7 +187,7 @@
 <image id="G35" width="110" height="95" xlink:href="images/G35.png"></image>
 </defs>
 <g  class='hex-fill edge-svg'    fill-rule="evenodd">
-<g id="Polygon">
+<g>
 <use fill="url(#pattern-8)" fill-rule="evenodd" xlink:href="#path-8"></use>
 <path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 </g>
@@ -208,7 +203,7 @@
 <image id="G31" width="110" height="95" xlink:href="images/G31.png"></image>
 </defs>
 <g  class='hex-fill edge-svg'    fill-rule="evenodd">
-<g id="Polygon">
+<g>
 <use fill="url(#pattern-9)" fill-rule="evenodd" xlink:href="#path-9"></use>
 <path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 </g>
@@ -224,7 +219,7 @@
 <image id="G44" width="110" height="95" xlink:href="images/G44.png"></image>
 </defs>
 <g  class='hex-fill edge-svg'    fill-rule="evenodd">
-<g id="Polygon">
+<g>
 <use fill="url(#pattern-10)" fill-rule="evenodd" xlink:href="#path-10"></use>
 <path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 </g>
@@ -240,7 +235,7 @@
 <image id="G40" width="110" height="95" xlink:href="images/G40.png"></image>
 </defs>
 <g  class='hex-fill'    fill-rule="evenodd">
-<g id="Polygon">
+<g>
 <use fill="url(#pattern-11)" fill-rule="evenodd" xlink:href="#path-11"></use>
 <path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 </g>
@@ -256,7 +251,7 @@
 <image id="G36" width="110" height="95" xlink:href="images/G36.png"></image>
 </defs>
 <g  class='hex-fill'    fill-rule="evenodd">
-<g id="Polygon">
+<g>
 <use fill="url(#pattern-12)" fill-rule="evenodd" xlink:href="#path-12"></use>
 <path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 </g>
@@ -272,7 +267,7 @@
 <image id="G32" width="110" height="95" xlink:href="images/G32.png"></image>
 </defs>
 <g  class='hex-fill'    fill-rule="evenodd">
-<g id="Polygon">
+<g>
 <use fill="url(#pattern-13)" fill-rule="evenodd" xlink:href="#path-13"></use>
 <path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 </g>
@@ -288,7 +283,7 @@
 <image id="G28" width="110" height="95" xlink:href="images/G28.png"></image>
 </defs>
 <g  class='hex-fill edge-svg'    fill-rule="evenodd">
-<g id="Polygon">
+<g>
 <use fill="url(#pattern-14)" fill-rule="evenodd" xlink:href="#path-14"></use>
 <path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 </g>
@@ -304,7 +299,7 @@
 <image id="G42" width="110" height="95" xlink:href="images/G42.png"></image>
 </defs>
 <g  class='hex-fill'    fill-rule="evenodd">
-<g id="Polygon">
+<g>
 <use fill="url(#pattern-15)" fill-rule="evenodd" xlink:href="#path-15"></use>
 <path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 </g>
@@ -320,7 +315,7 @@
 <image id="G38" width="110" height="95" xlink:href="images/G38.png"></image>
 </defs>
 <g  class='hex-fill'    fill-rule="evenodd">
-<g id="Polygon">
+<g>
 <use fill="url(#pattern-16)" fill-rule="evenodd" xlink:href="#path-16"></use>
 <path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 </g>
@@ -336,7 +331,7 @@
 <image id="G34" width="110" height="95" xlink:href="images/G34.png"></image>
 </defs>
 <g  class='hex-fill'    fill-rule="evenodd">
-<g id="Polygon">
+<g>
 <use fill="url(#pattern-17)" fill-rule="evenodd" xlink:href="#path-17"></use>
 <path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 </g>
@@ -352,7 +347,7 @@
 <image id="G30" width="110" height="95" xlink:href="images/G30.png"></image>
 </defs>
 <g  class='hex-fill'    fill-rule="evenodd">
-<g id="Polygon">
+<g>
 <use fill="url(#pattern-18)" fill-rule="evenodd" xlink:href="#path-18"></use>
 <path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 </g>
@@ -368,7 +363,7 @@
 <image id="G27" width="110" height="95" xlink:href="images/G27.png"></image>
 </defs>
 <g  class='hex-fill edge-svg'    fill-rule="evenodd">
-<g id="Polygon">
+<g>
 <use fill="url(#pattern-19)" fill-rule="evenodd" xlink:href="#path-19"></use>
 <path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 </g>
@@ -384,7 +379,7 @@
 <image id="G18" width="110" height="95" xlink:href="images/G18.png"></image>
 </defs>
 <g  class='hex-fill'    fill-rule="evenodd">
-<g id="Polygon">
+<g>
 <use fill="url(#pattern-20)" fill-rule="evenodd" xlink:href="#path-20"></use>
 <path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 </g>
@@ -400,7 +395,7 @@
 <image id="G14" width="110" height="95" xlink:href="images/G14.png"></image>
 </defs>
 <g  class='hex-fill'    fill-rule="evenodd">
-<g id="Polygon">
+<g>
 <use fill="url(#pattern-21)" fill-rule="evenodd" xlink:href="#path-21"></use>
 <path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 </g>
@@ -416,7 +411,7 @@
 <image id="G10" width="110" height="95" xlink:href="images/G10.png"></image>
 </defs>
 <g  class='hex-fill'    fill-rule="evenodd">
-<g id="Polygon">
+<g>
 <use fill="url(#pattern-22)" fill-rule="evenodd" xlink:href="#path-22"></use>
 <path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 </g>
@@ -432,7 +427,7 @@
 <image id="G6" width="110" height="95" xlink:href="images/G6.png"></image>
 </defs>
 <g  class='hex-fill edge-svg'    fill-rule="evenodd">
-<g id="Polygon">
+<g>
 <use fill="url(#pattern-23)" fill-rule="evenodd" xlink:href="#path-23"></use>
 <path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 </g>
@@ -448,7 +443,7 @@
 <image id="G25" width="110" height="95" xlink:href="images/G25.png"></image>
 </defs>
 <g  class='hex-fill'    fill-rule="evenodd">
-<g id="Polygon">
+<g>
 <use fill="url(#pattern-24)" fill-rule="evenodd" xlink:href="#path-24"></use>
 <path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 </g>
@@ -464,7 +459,7 @@
 <image id="G16" width="110" height="95" xlink:href="images/G16.png"></image>
 </defs>
 <g  class='hex-fill'    fill-rule="evenodd">
-<g id="Polygon">
+<g>
 <use fill="url(#pattern-25)" fill-rule="evenodd" xlink:href="#path-25"></use>
 <path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 </g>
@@ -480,7 +475,7 @@
 <image id="G12" width="110" height="95" xlink:href="images/G12.png"></image>
 </defs>
 <g  class='hex-fill'    fill-rule="evenodd">
-<g id="Polygon">
+<g>
 <use fill="url(#pattern-26)" fill-rule="evenodd" xlink:href="#path-26"></use>
 <path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 </g>
@@ -496,7 +491,7 @@
 <image id="G8" width="110" height="95" xlink:href="images/G8.png"></image>
 </defs>
 <g  class='hex-fill'    fill-rule="evenodd">
-<g id="Polygon">
+<g>
 <use fill="url(#pattern-27)" fill-rule="evenodd" xlink:href="#path-27"></use>
 <path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 </g>
@@ -512,14 +507,14 @@
 <image id="G26" width="110" height="95" xlink:href="images/G26.png"></image>
 </defs>
 <g  class='hex-fill edge-svg'    fill-rule="evenodd">
-<g id="Polygon">
+<g>
 <use fill="url(#pattern-28)" fill-rule="evenodd" xlink:href="#path-28"></use>
 <path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 </g>
 </g>
 </svg>
 <!-- hex 29 -->
-<svg class='hexagon dropzone' id='hex29'  viewBox="0 0 140 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-resize = 'false'data-resize = 'false'>
+<svg class='hexagon dropzone' id='hex29'  viewBox="0 0 140 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-resize = 'false'>
 <defs>
 <polygon  id="path-29" points="135.652335 60 102.543698 116.460797 37.4563001 116.799088 4.34764791 60 36.8913394 3.20091199 103.108629 3.53920317"></polygon>
 <pattern id="pattern-29" patternUnits="objectBoundingBox" x="-0.087598784%" width="100.087599%" height="100%">
@@ -528,14 +523,14 @@
 <image id="G17" width="110" height="95" xlink:href="images/G17.png"></image>
 </defs>
 <g  class='hex-fill'    fill-rule="evenodd">
-<g id="Polygon">
+<g>
 <use fill="url(#pattern-29)" fill-rule="evenodd" xlink:href="#path-29"></use>
 <path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 </g>
 </g>
 </svg>
 <!-- hex 30  -->
-<svg class='hexagon dropzone' id='hex30'  viewBox="0 0 140 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-resize = 'false'data-resize = 'false'>
+<svg class='hexagon dropzone' id='hex30'  viewBox="0 0 140 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-resize = 'false'>
 <defs>
 <polygon  id="path-30" points="135.652335 60 102.543698 116.460797 37.4563001 116.799088 4.34764791 60 36.8913394 3.20091199 103.108629 3.53920317"></polygon>
 <pattern id="pattern-30" patternUnits="objectBoundingBox" x="-0.087598784%" width="100.087599%" height="100%">
@@ -544,14 +539,14 @@
 <image id="G13" width="110" height="95" xlink:href="images/G13.png"></image>
 </defs>
 <g  class='hex-fill'    fill-rule="evenodd">
-<g id="Polygon">
+<g>
 <use fill="url(#pattern-30)" fill-rule="evenodd" xlink:href="#path-30"></use>
 <path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 </g>
 </g>
 </svg>
 <!-- hex 31 -->
-<svg class='hexagon dropzone' id='hex31'  viewBox="0 0 140 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-resize = 'false'data-resize = 'false'>
+<svg class='hexagon dropzone' id='hex31'  viewBox="0 0 140 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-resize = 'false'>
 <defs>
 <polygon  id="path-31" points="135.652335 60 102.543698 116.460797 37.4563001 116.799088 4.34764791 60 36.8913394 3.20091199 103.108629 3.53920317"></polygon>
 <pattern id="pattern-31" patternUnits="objectBoundingBox" x="-0.087598784%" width="100.087599%" height="100%">
@@ -560,14 +555,14 @@
 <image id="G9" width="110" height="95" xlink:href="images/G9.png"></image>
 </defs>
 <g  class='hex-fill'    fill-rule="evenodd">
-<g id="Polygon">
+<g>
 <use fill="url(#pattern-31)" fill-rule="evenodd" xlink:href="#path-31"></use>
 <path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 </g>
 </g>
 </svg>
 <!-- hex 32 -->
-<svg class='hexagon dropzone' id='hex32'  viewBox="0 0 140 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-resize = 'false'data-resize = 'false'>
+<svg class='hexagon dropzone' id='hex32'  viewBox="0 0 140 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-resize = 'false'>
 <defs>
 <polygon  id="path-32" points="135.652335 60 102.543698 116.460797 37.4563001 116.799088 4.34764791 60 36.8913394 3.20091199 103.108629 3.53920317"></polygon>
 <pattern id="pattern-32" patternUnits="objectBoundingBox" x="-0.087598784%" width="100.087599%" height="100%">
@@ -576,14 +571,14 @@
 <image id="G5" width="110" height="95" xlink:href="images/G5.png"></image>
 </defs>
 <g  class='hex-fill edge-svg'    fill-rule="evenodd">
-<g id="Polygon">
+<g>
 <use fill="url(#pattern-32)" fill-rule="evenodd" xlink:href="#path-32"></use>
 <path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 </g>
 </g>
 </svg>
 <!-- hex 33  last short row-->
-<svg class='hexagon dropzone' id='hex33'  viewBox="0 0 140 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-resize = 'false'data-resize = 'false'>
+<svg class='hexagon dropzone' id='hex33'  viewBox="0 0 140 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-resize = 'false'>
 <defs>
 <polygon  id="path-33" points="135.652335 60 102.543698 116.460797 37.4563001 116.799088 4.34764791 60 36.8913394 3.20091199 103.108629 3.53920317"></polygon>
 <pattern id="pattern-33" patternUnits="objectBoundingBox" x="-0.087598784%" width="100.087599%" height="100%">
@@ -592,14 +587,14 @@
 <image id="G24" width="110" height="95" xlink:href="images/G24.png"></image>
 </defs>
 <g  class='hex-fill edge-svg'    fill-rule="evenodd">
-<g id="Polygon">
+<g>
 <use fill="url(#pattern-33)" fill-rule="evenodd" xlink:href="#path-33"></use>
 <path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 </g>
 </g>
 </svg>
 <!-- hex 34 -->
-<svg class='hexagon dropzone' id='hex34'  viewBox="0 0 140 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-resize = 'false'data-resize = 'false'>
+<svg class='hexagon dropzone' id='hex34'  viewBox="0 0 140 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-resize = 'false'>
 <defs>
 <polygon  id="path-34" points="135.652335 60 102.543698 116.460797 37.4563001 116.799088 4.34764791 60 36.8913394 3.20091199 103.108629 3.53920317"></polygon>
 <pattern id="pattern-34" patternUnits="objectBoundingBox" x="-0.087598784%" width="100.087599%" height="100%">
@@ -608,14 +603,14 @@
 <image id="G15" width="110" height="95" xlink:href="images/G15.png"></image>
 </defs>
 <g  class='hex-fill edge-svg'    fill-rule="evenodd">
-<g id="Polygon">
+<g>
 <use fill="url(#pattern-34)" fill-rule="evenodd" xlink:href="#path-34"></use>
 <path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 </g>
 </g>
 </svg>
 <!-- hex 35 -->
-<svg class='hexagon dropzone' id='hex35'  viewBox="0 0 140 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-resize = 'false'data-resize = 'false'>
+<svg class='hexagon dropzone' id='hex35'  viewBox="0 0 140 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-resize = 'false'>
 <defs>
 <polygon  id="path-35" points="135.652335 60 102.543698 116.460797 37.4563001 116.799088 4.34764791 60 36.8913394 3.20091199 103.108629 3.53920317"></polygon>
 <pattern id="pattern-35" patternUnits="objectBoundingBox" x="-0.087598784%" width="100.087599%" height="100%">
@@ -624,14 +619,14 @@
 <image id="G11" width="110" height="95" xlink:href="images/G11.png"></image>
 </defs>
 <g  class='hex-fill edge-svg'    fill-rule="evenodd">
-<g id="Polygon">
+<g>
 <use fill="url(#pattern-35)" fill-rule="evenodd" xlink:href="#path-35"></use>
 <path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 </g>
 </g>
 </svg>
 <!-- hex 36 -->
-<svg class='hexagon dropzone' id='hex36'  viewBox="0 0 140 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-resize = 'false'data-resize = 'false'>
+<svg class='hexagon dropzone' id='hex36'  viewBox="0 0 140 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-resize = 'false'>
 <defs>
 <polygon  id="path-36" points="135.652335 60 102.543698 116.460797 37.4563001 116.799088 4.34764791 60 36.8913394 3.20091199 103.108629 3.53920317"></polygon>
 <pattern id="pattern-36" patternUnits="objectBoundingBox" x="-0.087598784%" width="100.087599%" height="100%">
@@ -640,14 +635,14 @@
 <image id="G7" width="110" height="95" xlink:href="images/G7.png"></image>
 </defs>
 <g  class='hex-fill edge-svg'    fill-rule="evenodd">
-<g id="Polygon">
+<g>
 <use fill="url(#pattern-36)" fill-rule="evenodd" xlink:href="#path-36"></use>
 <path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 </g>
 </g>
 </svg>
 <!-- hex 42  last long row-->
-<svg class='hexagon dropzone' id='hex42'  viewBox="0 0 140 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-resize = 'false'data-resize = 'false'>
+<svg class='hexagon dropzone' id='hex42'  viewBox="0 0 140 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-resize = 'false'>
 <defs>
 <polygon  id="path-42" points="135.652335 60 102.543698 116.460797 37.4563001 116.799088 4.34764791 60 36.8913394 3.20091199 103.108629 3.53920317"></polygon>
 <pattern id="pattern-42" patternUnits="objectBoundingBox" x="-0.087598784%" width="100.087599%" height="100%">
@@ -656,7 +651,7 @@
 <image id="G23" width="110" height="95" xlink:href="images/G23.png"></image>
 </defs>
 <g  class='hex-fill edge-svg'    fill-rule="evenodd">
-<g id="Polygon">
+<g>
 <use fill="url(#pattern-42)" fill-rule="evenodd" xlink:href="#path-42"></use>
 <path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 </g>
@@ -672,7 +667,7 @@
 <image id="G22" width="110" height="95" xlink:href="images/G22.png"></image>
 </defs>
 <g  class='hex-fill edge-svg'    fill-rule="evenodd">
-<g id="Polygon">
+<g>
 <use fill="url(#pattern-43)" fill-rule="evenodd" xlink:href="#path-43"></use>
 <path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 </g>
@@ -688,7 +683,7 @@
 <image id="G21" width="110" height="95" xlink:href="images/G21.png"></image>
 </defs>
 <g  class='hex-fill edge-svg'    fill-rule="evenodd">
-<g id="Polygon">
+<g>
 <use fill="url(#pattern-44)" fill-rule="evenodd" xlink:href="#path-44"></use>
 <path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 </g>
@@ -704,7 +699,7 @@
 <image id="G20" width="110" height="95" xlink:href="images/G20.png"></image>
 </defs>
 <g  class='hex-fill edge-svg'    fill-rule="evenodd">
-<g id="Polygon">
+<g>
 <use fill="url(#pattern-45)" fill-rule="evenodd" xlink:href="#path-45"></use>
 <path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 </g>
@@ -720,13 +715,12 @@
 <image id="G19" width="110" height="95" xlink:href="images/G19.png"></image>
 </defs>
 <g  class='hex-fill edge-svg'    fill-rule="evenodd">
-<g id="Polygon">
+<g>
 <use fill="url(#pattern-46)" fill-rule="evenodd" xlink:href="#path-46"></use>
 <path  d="M136.946273,60.7587657 L137.387409,60.0064875 L136.951911,59.2509315 L104.408205,2.7901347 L103.97792,2.04362463 L103.116293,2.03922274 L36.8990025,1.70093157 L36.0245615,1.69646422 L35.589835,2.45520006 L3.0461435,59.2542881 L2.61517859,60.0064589 L3.05173982,60.7553954 L36.160392,117.554483 L36.5970432,118.303574 L37.4640963,118.299068 L102.551494,117.960777 L103.40559,117.956337 L103.837635,117.219562 L136.946273,60.7587657 Z"></path>
 </g>
 </g>
 </svg>
-
 </div>
 </main>
 <ul class="options-list">
@@ -745,14 +739,3 @@
 </footer>
 </body>
 </html>
-<!-- 	<aside class='sidebar'>
-<div class='controls'>
-						<button type="button" value='scramble'>Scramble</button>
-						<button type="button" value='hint'>hint</button>
-						<button type="button">restart</button>
-						<button type="">preview</button>
-						<button type="button">full preview</button>
-						<button type="button">pause</button>
-						<button type="edges">edges</button>
-</div>
-</aside> -->

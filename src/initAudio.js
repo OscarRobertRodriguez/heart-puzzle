@@ -13,7 +13,7 @@ export default function initAudio(mode) {
    }
 
   if(text === 'hard') {
-  	startTimer(180, music, text);
+  	startTimer(190, music, text);
   }
 
     var muteBtn = document.getElementById('muteBtn'); 
