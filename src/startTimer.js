@@ -49,8 +49,9 @@ export default function startTimer(seconds, audio1, audio2, difficulty) {
       }); }, 1000); 
         setInterval(() => {
     	successModal.style.display = 'block'; 
+      successModal.classList.add('animated', 'zoomInDown');
         }, 10000); 
-    	console.log('you finished the puzzle'); 
+   
     	return ;
     }
     
@@ -73,7 +74,8 @@ export default function startTimer(seconds, audio1, audio2, difficulty) {
    		clearInterval(audio2);
     	defeatSound.play();
    	    setInterval(() => {
-    	defeatModal.style.display = 'block'; 
+    	defeatModal.style.display = 'block';
+      successModal.classList.add('animated', 'zoomInDown'); 
         }, 2000); 
    		return; 
    	}; 

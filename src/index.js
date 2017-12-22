@@ -35,7 +35,6 @@ import highlightEdges from './edges';
 import preview from './preview'; 
 import scramble from './scramble';
 import startMode from './startMode'; 
-import startHard from './startHard'; 
 import sound from 'sounds/Ether.mp3';
 import resizePlacePieces from './resizePlacePieces';
 
@@ -50,30 +49,6 @@ var edgeBtn = document.getElementById('edge-btn'),
     muteBtn = document.getElementById('muteBtn'), 
     hardBtn = document.getElementById('hardBtn'); 
 
-
-// var music, muteBtn; 
-
-// function initAudio () {
-//     music = new Audio(sound); 
-// 	music.loop = true;
-// 	music.play();
-
-//     muteBtn = document.getElementById('muteBtn'); 
-
-//     muteBtn.addEventListener('click', pauseMusic);
-
-//     function pauseMusic() {
-//     	music.pause(); 
-//     } 
-// }; 
-
-
-
-
-
-
-
-// window.addEventListener('load', initAudio);
 
 
 

@@ -6,14 +6,14 @@ var windowWidth = window.innerWidth;
 var data = e.dataTransfer.getData('text');
 
 
- console.log( 'this is the data ' + data);
+
     e.preventDefault();
     e.stopPropagation();
 
     var dropzones = document.querySelectorAll('.hexagon');
     
 
-    console.log(e.target + ' this is target for drop');
+
 
     [].forEach.call(dropzones, dropzone => {
       if (e.target.id === dropzone.id) {

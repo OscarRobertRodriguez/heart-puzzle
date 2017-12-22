@@ -7,7 +7,7 @@ export default function handleDragEnter(e) {
 	
 	var path = dropzone.childNodes[3];
 
-    console.log('drag Enter' + dropzone  );
+
    if (path.style.fill !== 'none' && path.classList.contains('svg-highlight') === false) {
    path.style.stroke = 'hotpink';
    path.style.fill = '#5F5E5F';

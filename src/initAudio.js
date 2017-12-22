@@ -11,7 +11,6 @@ export default function initAudio(mode) {
 
 	music.loop = true;
 	music.play();
-   console.log(text + ' this is mode');
   if(text === 'easy') {
 	startTimer(930, music, bearInterval);
    }
