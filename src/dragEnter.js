@@ -1,16 +1,22 @@
 
 
 export default function handleDragEnter(e) {
+	var dropzone = e.target;
     e.stopPropagation();
 	e.preventDefault(); 
-	var dropzone = e.target;
-	var hexbackground = e.target.childNodes[3];
+	
+	var path = dropzone.childNodes[3];
 
-    console.log('drag Enter' + e);
-// if (hexbackground !== undefined && hexbackground.style.fill !== 'none') {
-//    hexbackground.style.stroke = 'hotpink';
-//    hexbackground.style.strokeWidth = '2';      
-//     }
+    console.log('drag Enter' + dropzone  );
+   if (path.style.fill !== 'none' && path.classList.contains('svg-highlight') === false) {
+   path.style.stroke = 'hotpink';
+   path.style.fill = '#5F5E5F';
+   path.style.strokeWidth = '4';
+   }      
  
+
+   if (path.classList.contains('svg-highlight') === true ) {
+     path.style.fill = '#5F5E5F';
+   }
 	return false; 
 }

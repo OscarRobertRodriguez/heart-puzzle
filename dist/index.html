@@ -7,46 +7,38 @@
 	<link href="style.css" rel="stylesheet"></head>
 	
 	<body id='whole-page'>
-		<div id="mpopupBox" class="mpopup">
+
+		<!-- start modal -->
+		<div id="mpopupBox" class="mpopup animated">
 			<!-- mPopup content -->
-			<div  class="mpopup-content">
-				<div class="mpopup-head">
-					<p class='modal-story'>can you make it out of the forest alive or will the bear find you before you can get out!</p>
+			<div  class="mpopup-content animated fadeInLeft">
+					<p class='modal-story'>can you make it out of the forest alive or will the bear find you first!</p>
 					<img class='modal-image' src="images/solved.jpg" alt="">
-				</div>
-				<div class="mpopup-main">
-					<button id='easyBtn' class='modal-btn'>easy</button>
-					<button id='hardBtn' class='modal-btn'>hard</button>
-				</div>
+					<div class="button-container">
+
+					 <button id='easyBtn' class='modal-btn'>easy</button>
+					 <button id='hardBtn' class='modal-btn'>hard</button>
+					</div>
+					
 				
 			</div>
 		</div>
-		<div id="defeatBox" class="mpopup">
+		<!-- defeat modal -->
+		<div id="defeatBox" class="mpopup defeat-popup">
 			<!-- mPopup content -->
-			<div  class="mpopup-content">
-				<div class="mpopup-head">
+			<div  class="mpopup-content defeat-content">
 					<p class="modal-story">The <span class="bear">bear</span> got you, try again.</p>
-					<!-- <img class='modal-image' src="images/solved.png" alt=""> -->
-				</div>
-				<div class="mpopup-main">
-					
-					<button  class='modal-btn restart'>restart</button>
-				</div>
+							<button  class='modal-btn restart'>restart</button>
 				
 			</div>
 		</div>
-		<div id="successBox" class="mpopup">
+
+<!-- success modal -->
+		<div id="successBox" class="mpopup success-popup">
 			<!-- mPopup content -->
-			<div  class="mpopup-content">
-				<div class="mpopup-head">
-					<p class="modal-story">You beat the bear in a wrestling match and escape. Victory.<p>
-						<!-- <img class='modal-image' src="images/solved.png" alt=""> -->
-					</div>
-					<div class="mpopup-main">
-						
+			<div  class="mpopup-content success-content">
+					<p class="modal-story">You find an abandon cabin and escape the bear for the night. Victory.</p>
 						<button  class='modal-btn restart'>restart</button>
-					</div>
-					
 				</div>
 			</div>
 			
@@ -66,7 +58,7 @@
 					<div class='blank-puzzle__canvas' id='puzzle-unsolved'>
 						<img class='puzzle-blank' alt='blank puzzle canvas'  >
 						<!-- hex 1 -->
-						<svg class='hexagon dropzone' id='hex1'  viewBox="0 0 140 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-resize = 'false'>
+				<svg class='hexagon dropzone' id='hex1'  viewBox="0 0 140 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-resize = 'false'>
 							<defs>
 						<polygon  id="path-1" points="135.652335 60 102.543698 116.460797 37.4563001 116.799088 4.34764791 60 36.8913394 3.20091199 103.108629 3.53920317"></polygon>
 						<pattern id="pattern-1" patternUnits="objectBoundingBox" x="-0.087598784%" width="100.087599%" height="100%">

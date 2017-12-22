@@ -93,7 +93,7 @@ hardBtn.addEventListener('click', startMode);
 // edge button to enable edges highlight
 edgeBtn.addEventListener('click', highlightEdges);
 // preview button to enable preview
-previewBtn.addEventListener('click', preview);
+previewBtn.addEventListener('click', preview, false);
 // scramble to enable scrable of puzzle pieces
 scrambleBtn.addEventListener('click', scramble); 
 

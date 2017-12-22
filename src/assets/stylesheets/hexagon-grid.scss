@@ -6,6 +6,11 @@
   z-index: 999999999;
 }
 
+
+.hexagon * {
+	pointer-events: none;
+}
+
 @media (min-width: 2190px) {
 	.hexagon {
   position: absolute;
@@ -23,13 +28,12 @@
 .hex-fill {
 	fill: black;
 	stroke: #fff;
-	stroke-width: 1;
-	transition: fill 1ms ease-in, stroke .5ms ease;
-	&:hover {
-        stroke-width: 2;
-        stroke: hotpink;
-	}
+	stroke-dasharray: 500;
+	stroke-width: 2;
+	transition: fill .25ms cubic-bezier(0,1.01,.95,.01), stroke .25s cubic-bezier(0,1.01,.95,.01);
 }
+
+
 
 
 .highlight {
@@ -261,3 +265,12 @@
 
 
 };
+
+
+
+// animation for puzzle completion 
+
+.filter-animation {
+	animation: filter-glow 3s infinite, pulse 1s infinite;
+}
+

@@ -8,5 +8,4 @@ export default function startMode(e) {
     var text = e.target.textContent; 
     hideModal();
     initAudio(text); 
-    // startTimer(330);  
 }; 

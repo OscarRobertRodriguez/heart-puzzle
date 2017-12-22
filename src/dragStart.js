@@ -3,6 +3,7 @@
 
 
 export default function handleDragStart (e) {
+	e.stopPropagation();
   var dragItem = e.target; 
   var dt = e.dataTransfer; 
   var imageurl = e.target.src; 
@@ -11,6 +12,7 @@ export default function handleDragStart (e) {
   
 
 dt.setData("text/plain", dragItem.id);
+
   
 
  

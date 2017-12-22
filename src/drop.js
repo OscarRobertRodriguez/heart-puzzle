@@ -3,37 +3,41 @@ import sound from 'sounds/setPiece.mp3';
 export default function handleDrop(e) {
 
 var windowWidth = window.innerWidth;
+var data = e.dataTransfer.getData('text');
 
+
+ console.log( 'this is the data ' + data);
     e.preventDefault();
     e.stopPropagation();
 
-    var paths = document.querySelectorAll('path');
+    var dropzones = document.querySelectorAll('.hexagon');
+    
 
-    console.log(paths);
+    console.log(e.target + ' this is target for drop');
 
-    paths.forEach(function(path) {
-        if (e.target === path) {
-            var data = e.dataTransfer.getData('text'),
-                svg = e.target.parentNode.parentNode.parentNode,
-                hex = e.target.parentNode.parentNode,
+    [].forEach.call(dropzones, dropzone => {
+      if (e.target.id === dropzone.id) {
+
+             var svg = e.target,
+                svgPath = svg.children[1], 
                 dragImgData = document.getElementById(data).dataset.num,
-                svgImg = hex.previousSibling.previousSibling.childNodes[5],
+                svgImg = e.target.children[0].children[2],
                 svgImgId = svgImg.id,
+     
                 bleep = new Audio();
-            console.log(svgImg),
-                console.log(svgImgId);
-            console.log(data + ' this is data');
-
-            console.log("This si hex" + hex.className);
+           
+             
 
             bleep.src = sound;
 
 
 
             if (dragImgData === svgImgId && windowWidth < 2190) {
-                hex.style.fill = 'none';
-                hex.style.stroke = 'none';
-                hex.style.strokeWidth = '';
+                svgPath.style.fill = 'none';
+                svgPath.style.stroke = 'none';
+                svgPath.style.strokeWidth = '';
+                svg.classList.add('animated', 'pulse');
+                setInterval( () => svg.classList.remove('animated', 'pulse'), 1000);
                 svg.style.width = '127px';
                 svg.style.height = '104px';
                 svg.dataset.resize = 'true'; 
@@ -42,17 +46,17 @@ var windowWidth = window.innerWidth;
             }
 
             if (dragImgData === svgImgId && windowWidth >= 2190) {
-                hex.style.fill = 'none';
-                hex.style.stroke = 'none';
-                hex.style.strokeWidth = '';
+                svgPath.style.fill = 'none';
+                svgPath.style.stroke = 'none';
+                svgPath.style.strokeWidth = '';
                 svg.style.width = '183px';
                 svg.style.height = '144px';
                 svg.dataset.resize = 'true'; 
                 bleep.play();
                 document.getElementById(data).outerHTML = '';
             }
+          }
 
-        }
     })
 
 

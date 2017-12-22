@@ -1,20 +1,22 @@
 
 import displayTimeLeft from './displayTimeLeft';
 import bearSound from 'sounds/bear2.wav';
-import birdSound from 'sounds/bird.wav';
-import bearRun from 'sounds/bearChase.wav'; 
+import success from 'sounds/success.wav';
+import panting from 'sounds/scared-breathing.wav';
+import snow from 'sounds/walking-snow.wav';
 import scramble from './scramble'; 
 
-export default function startTimer(seconds, audio, difficulty) {
+export default function startTimer(seconds, audio1, audio2, difficulty) {
     var mode = difficulty,  
         defeatSound = new Audio(bearSound),
-        successSound = new Audio(birdSound),
-        bearChase = new Audio(bearRun), 
+        successSound = new Audio(success),
+        scaredSound = new Audio(panting),
+        walkingSound = new Audio(snow), 
         defeatModal = document.getElementById('defeatBox'),
         successModal = document.getElementById('successBox'),
         hexagons = document.querySelectorAll('.hexagon'),
-        scrambleMode, 
-        bearInterval = setInterval(() => { bearChase.play()} , 45000); 
+        scrambleMode; 
+        
 
 
     const now = Date.now(); 
@@ -34,30 +36,41 @@ export default function startTimer(seconds, audio, difficulty) {
 
     if(pieces.length === 0 ) {
     	clearInterval(countdown); 
-    	clearInterval(bearInterval);
     	clearInterval(scrambleMode);
-    	audio.pause();
+    	audio1.pause();
+    	scaredSound.pause();
+    	clearInterval(audio2); 
     	successSound.play();
     	setInterval(() => {
-    	[].forEach.call(hexagons, (hexagon) =>  hexagon.style.display = 'none'); 
-        }, 1000); 
+    	[].forEach.call(hexagons, (hexagon) => {
+        hexagon.classList.add('filter-animation');
+
+      
+      }); }, 1000); 
         setInterval(() => {
     	successModal.style.display = 'block'; 
-        }, 4000); 
-    	// audio.pause();
-    	// defeatSound.play();   
+        }, 10000); 
     	console.log('you finished the puzzle'); 
     	return ;
     }
+    
 
+    if(pieces.length < 8) {	
+       scaredSound.play(); 
+       scaredSound.loop = true; 
+    }
 
-
+    
+    if(pieces.length === 10 || pieces.length === 25 || pieces.length === 39) {
+        walkingSound.play(); 
+    }
 
    	if(secondsLeft < 0 && pieces.length > 0) {
    		clearInterval(countdown);
-   		clearInterval(bearInterval);
    		clearInterval(scrambleMode);
-   		audio.pause();
+   		audio1.pause();
+   		scaredSound.pause(); 
+   		clearInterval(audio2);
     	defeatSound.play();
    	    setInterval(() => {
     	defeatModal.style.display = 'block'; 

@@ -1,7 +1,6 @@
 
 export default function hideModal () {
-  var modal = document.getElementById('mpopupBox'); 
-  modal.style.opacity = 0;
+  var modal = document.getElementById('mpopupBox');
+  modal.className += ' slideOutRight'; 
 
-  setInterval(function () { modal.style.display = 'none'}, 1000);
 }; 

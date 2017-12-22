@@ -11,12 +11,12 @@ body {
 
 @media (max-width: 1415px) {
    body {    
-    grid-template-areas: "header header header"
-                         " leftzone  main main"
-                         " rightzone main main"
-                          "rightzone footer footer"; 
-   grid-template-columns: minmax(315px,1fr) 1fr 1fr ;                     
-   grid-template-rows:  80px 320px 1fr 20px;
+    grid-template-areas: "header header "
+                         " leftzone  main "
+                         " rightzone main "
+                          "footer footer "; 
+   grid-template-columns: minmax(280px, 320px) 1fr;                     
+   grid-template-rows:  70px 290px 1fr 20px;
    }
 }
 
@@ -24,11 +24,13 @@ body {
     position: relative;
     margin: 0 auto;
     margin-top: 50px;
+    grid-area: main;
 }
 
 @media (max-width: 1415px) {
     .puzzle-container {
-        margin-top: 5px;
+        margin-top: 15px;
+        margin-left: 10px;
     }
 }
 

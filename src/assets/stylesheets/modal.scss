@@ -1,6 +1,7 @@
 
 
  .mpopup {
+    color: #B14252;
     display: block;
     position: fixed;
     z-index: 9999999999;
@@ -10,11 +11,20 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,1);
+    background-color: currentColor;
     transition: opacity 1s ease; 
+
 }
 
+.defeat-popup {
+ color:rebeccapurple;
+ background-color: currentColor;
+}
+
+.success-popup {
+   color:green;
+ background-color: currentColor;
+}
 
 #defeatBox {
 	display: none;
@@ -31,20 +41,20 @@
  }
 
 .mpopup-content {
-    position: relative;
-    border-radius: 25px;
-    background-color: HSLA(342, 54%, 40%, 1);
+  display: flex; 
+  align-items: center;
+  flex-direction: column;
+    color: currentColor;
+    border-radius: 35px;
     margin: auto;
     padding: 0;
     width: 60%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    box-shadow: 1px 5px 100px #fff;
-    animation-name: animatetop;
-    animation-duration: 0.4s; 
 }
 
 .modal-story {
 	padding: 5px;
+  z-index: 2;
+  color: #fff;
 	padding-left: 20px;
 	font-size: 35px;
 	font-family: $lato;
@@ -53,71 +63,91 @@
 	}
 }
 
-.mpopup-head {
-    background-color: #252732;
-    color: white;
-    display: flex;
-   justify-content: center;
-  align-items: center;
-  height: 400px;
+
+.modal-intro {
+ top: 150px;
+ width: 600px;
+  position: absolute;
 }
-.mpopup-main {
-  padding: 2px 16px;
-  display: flex;
+
+.mpopup-background {
+  background: url("../images/solved.jpg");
+  background-repeat: no-repeat;
+}
+
+
+.button-container {
+  position: relative;
+  top: -100px;
   justify-content: space-around;
-  align-items: center;
-
+  
 }
 
 
-.mpopup-main > p {
-	color: #fff;
-	font-size: 2rem;
-}
 
 .modal-btn {
+  color: currentColor;
   padding: 15px;
   font-size: 2rem;
   font-variant: small-caps;
   cursor: pointer;
   user-select: none;
   outline: none;
+  border-color: currentColor;
   border-radius: 5px;
   margin: 5px;
-    &:hover {
-    background: #252732;
-    color: #fff;
+  transition: color .25ms ease ,box-shadow .2s ease, letter-spacing .2s ease;
+  &:hover {
+    box-shadow: 1px 4px 5px rgba(0, 0 , 0, .8);
   }
   &:active {
-    box-shadow: 5px 5px 3px rgba(0, 0 , 0, .2);
+    box-shadow: 1px 2px 3px rgba(0, 0 , 0, .2);
     letter-spacing: 1px;
   }
 }
-.mpopup-foot {
-    padding: 2px 16px;
-    background-color: #ff0000;
-    color: #ffffff;
+
+
+ #easyBtn {
+  left: 200px;
+ }
+
+ #hardBtn {
+  right: 200px;
+ }
+
+ 
+
+
+.defeat-content, .success-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+
+
 
 /* add animation effects */
 @-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0}
+    from {top:-400px; opacity:0}
     to {top:0; opacity:1}
 }
 
 @keyframes animatetop {
-    from {top:-300px; opacity:0}
+    from {top:-400px; opacity:0}
     to {top:0; opacity:1}
 }
 
 
 .defeat-message {
-	font-size: 3rem;
+	font-size: 4rem;
 	font-family: $lato;
 }
 
 .modal-image {
-  width: 450px;
-  height: 300px;
+  filter: brightness(1);
+  border-radius: 55px;
+  width: 100%;
   padding-right: 10px;
 }
