@@ -47,10 +47,11 @@ const config = {
 					fallback:'style-loader', 
 					use: [
 						"css-loader",
-						"sass-loader",
-						"postcss-loader"
-						
-					]
+						"sass-loader", {
+						loader: 'postcss-loader',
+						options:  {
+							plugins: () => [require('autoprefixer')]
+						}}]
 				})),
 			},
 			{
@@ -122,7 +123,12 @@ module.exports = config;
 
 if (process.env.NODE_ENV === 'production') {
 	module.exports.plugins.push(
-		new webpack.optimize.UglifyJsPlugin(), // call uglify plugin
+		// call uglify plugin
+		new webpack.optimize.UglifyJsPlugin({
+			sourceMap: true,
+			warnings: false,
+			mangle: true
+		}), 
 		new OptimizeCSSAssets() 
 	); 
 }
