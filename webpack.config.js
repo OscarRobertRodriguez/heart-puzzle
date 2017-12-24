@@ -47,11 +47,12 @@ const config = {
 					fallback:'style-loader', 
 					use: [
 						"css-loader",
-						"sass-loader", {
+						{
 						loader: 'postcss-loader',
 						options:  {
 							plugins: () => [require('autoprefixer')]
-						}}]
+						}},
+						"sass-loader"]
 				})),
 			},
 			{
