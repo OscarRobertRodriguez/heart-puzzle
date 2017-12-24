@@ -10,7 +10,8 @@
     "deploy": "npm run production && git commit --all -m 'deploy gh-pages build' && git push origin master && git branch -D gh-pages && git checkout -b gh-pages && git subtree push --prefix dist origin gh-pages && git checkout master"
   },
   "browserslist": [
-    "> 10%"
+    "> 1%",
+    "last 2 versions"
   ],
   "repository": {
     "type": "git",
