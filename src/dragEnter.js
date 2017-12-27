@@ -14,9 +14,9 @@ export default function handleDragEnter(e) {
    path.style.strokeWidth = '4';
    }      
  
-
-   if (path.classList.contains('svg-highlight') === true ) {
-     path.style.fill = '#5F5E5F';
-   }
+    if (path.style.fill !== 'none' && path.classList.contains('svg-highlight') === true) {
+      path.style.fill = '#5F5E5F';
+    }
+   
 	return false; 
 }

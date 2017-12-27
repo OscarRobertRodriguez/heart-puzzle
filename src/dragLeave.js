@@ -9,9 +9,9 @@ export default function handleDragLeave(e) {
         path.style.strokeWidth = '2';
     }
 
-    if (path.classList.contains('svg-highlight') === true) {
+    if (path.classList.contains('svg-highlight') === true && path.style.fill !== 'none' ) {
 
-        path.style.fill = 'black';
+        path.style.fill = '';
     }
 
     return false
